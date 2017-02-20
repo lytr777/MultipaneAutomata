@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Исполнители</string>
+    <string name="wait">Пожалуйста подождите, данные загружаются</string>
+    <string name="connection_error">Ошибка загрузки, проверьте подключение к интернету</string>
+    <string name="connection_error_button">Повторить попытку</string>
+    <string name="tracks_and_albums">%1$d альбомов, %2$d песен</string>
+    <string name="biography">Биография</string>
+</resources>
