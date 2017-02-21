@@ -20,6 +20,7 @@ public class StaticAutomata {
     }
 
     private StaticAutomata() {
+        //Создаем экземпляр класса list fragment один раз в конструкторе статического класса и храним на него ссылку пока существует сам статический класс
         listFragment = ListFragment.newInstance(link);
         state = "null";
         main = null;
@@ -58,6 +59,7 @@ public class StaticAutomata {
                     else {
                         state = "sl";
                         Log.d(TAG, "state " + oldState + " ---(" + event.event + ")---> " + state);
+                        //передаем ссылку на экземпляр list fragment вместе с событием
                         main.get().sendEvent(new Event("list", "list", listFragment));
                     }
                 } else Log.e(TAG, "Unknown event '" + event.event + "'");

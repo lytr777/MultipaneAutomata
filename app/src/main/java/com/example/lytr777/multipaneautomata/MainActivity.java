@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     else {
                         state = "bl";
                         Log.d(TAG, "state " + oldState + " ---(" + event.event + ")---> " + state);
+                        //получаем класс  lisf fragment вместе с событием и добавляем его в контейнер на главном экране
                         listFragment = (ListFragment) event.getObject(tag);
                         getSupportFragmentManager().beginTransaction()
                                 .add(R.id.main_frame, listFragment)
